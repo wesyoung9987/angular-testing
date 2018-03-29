@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {AuthService} from "./auth.service";
+import { DefaultPipe } from './default.pipe';
+import { LoginComponent } from './login/login.component';
+import { LoginAtbComponent } from './login-atb/login-atb.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DefaultPipe,
+    LoginComponent,
+    LoginAtbComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
