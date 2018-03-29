@@ -1,3 +1,5 @@
+// Reference: https://codecraft.tv/courses/angular/unit-testing/classes-and-pipes/
+
 import { DefaultPipe } from './default.pipe';
 
 describe('DefaultPipe', () => {

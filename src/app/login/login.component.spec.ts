@@ -1,3 +1,5 @@
+// Reference: https://codecraft.tv/courses/angular/unit-testing/mocks-and-spies/
+
 import { LoginComponent } from './login.component';
 import {AuthService} from "../auth.service";
 

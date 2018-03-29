@@ -1,3 +1,5 @@
+// Reference: https://codecraft.tv/courses/angular/unit-testing/classes-and-pipes/
+
 import { TestBed, inject } from '@angular/core/testing';
 
 import { AuthService } from './auth.service';

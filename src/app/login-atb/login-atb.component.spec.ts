@@ -1,3 +1,5 @@
+// Reference: https://codecraft.tv/courses/angular/unit-testing/angular-test-bed/
+
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoginAtbComponent } from './login-atb.component';
