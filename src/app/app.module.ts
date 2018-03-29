@@ -7,6 +7,7 @@ import {AuthService} from "./auth.service";
 import { DefaultPipe } from './default.pipe';
 import { LoginComponent } from './login/login.component';
 import { LoginAtbComponent } from './login-atb/login-atb.component';
+import { LoginChangeDetectionComponent } from './login-change-detection/login-change-detection.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { LoginAtbComponent } from './login-atb/login-atb.component';
     AppComponent,
     DefaultPipe,
     LoginComponent,
-    LoginAtbComponent
+    LoginAtbComponent,
+    LoginChangeDetectionComponent
   ],
   imports: [
     BrowserModule
