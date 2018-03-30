@@ -1,13 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import {ReactiveFormsModule} from "@angular/forms";
 
-
-import { AppComponent } from './app.component';
+// Services
 import {AuthService} from "./auth.service";
+import {AuthAsyncService} from "./auth-async.service";
+import {GithubApiService} from "./github/github-api.service";
+
+// Components
+import { AppComponent } from './app.component';
 import { DefaultPipe } from './default.pipe';
 import { LoginComponent } from './login/login.component';
 import { LoginAtbComponent } from './login-atb/login-atb.component';
 import { LoginChangeDetectionComponent } from './login-change-detection/login-change-detection.component';
+import { GithubComponent } from './github/github.component';
 
 
 @NgModule({
@@ -16,12 +23,19 @@ import { LoginChangeDetectionComponent } from './login-change-detection/login-ch
     DefaultPipe,
     LoginComponent,
     LoginAtbComponent,
-    LoginChangeDetectionComponent
+    LoginChangeDetectionComponent,
+    GithubComponent
   ],
   imports: [
-    BrowserModule
+    HttpClientModule,
+    BrowserModule,
+    ReactiveFormsModule
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    AuthAsyncService,
+    GithubApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
